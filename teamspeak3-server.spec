@@ -47,8 +47,8 @@
 # server.
 
 Name: teamspeak3-server
-Version: 3.3.1
-Release: 1%{?dist}
+Version: 3.13.7
+Release: 1
 Summary: TeamSpeak 3 Server
 
 Group: Applications/Internet
@@ -82,7 +82,7 @@ URL: http://www.teamspeak.com/
 %define __user         teamspeak3
 %define _firewallddir  %{_usr}/lib/firewalld/services
 
-Source: http://ftp.4players.de/pub/hosted/ts3/releases/%{version}/%{name}_%{_target_os}_%{__tgzarch}-%{version}.tar.bz2
+Source: https://files.teamspeak-services.com/releases/server/%{version}/%{name}.tar.bz2
 
 Requires: logrotate
 %if %{use_systemd}
